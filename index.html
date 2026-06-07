@@ -52,8 +52,8 @@
   .site-header { margin-bottom: 48px; }
 
   .portrait {
-    width: 84px;
-    height: 84px;
+    width: 112px;
+    height: 112px;
     border-radius: 50%;
     overflow: hidden;
     background: var(--rule);
@@ -129,6 +129,22 @@
     gap: 0 22px;
   }
 
+  .work-hero {
+    margin: 18px 0 0;
+    border: 1px solid var(--rule);
+    overflow: hidden;
+  }
+  .work-hero img {
+    width: 100%;
+    display: block;
+  }
+  .work-hero iframe {
+    width: 100%;
+    height: 480px;
+    display: block;
+    border: none;
+  }
+
   /* ── Drawings ── */
   .drawings { margin-bottom: 56px; }
   .drawings > .draw-intro { color: var(--muted); margin-bottom: 22px; }
@@ -182,7 +198,7 @@
 
   <section class="intro">
     <p>I'm a software engineer based in New York. For the past five years I built systems at Meta; these days I'm working in biosecurity, using the tools of modern software to understand and help reduce catastrophic biological risk.</p>
-    <p>I studied computer science at Stanford. I'm most interested in where AI and biology meet, and in the infrastructure that keeps that intersection safe.</p>
+    <p>I studied Computer Science at Stanford. I'm most interested in where AI and biology meet, and in the infrastructure that keeps that intersection safe.</p>
   </section>
 
   <section class="work" id="work">
@@ -192,10 +208,13 @@
       <div class="work-meta">Research · SPAR Spring 2026</div>
       <h2 class="work-title">Mapping Global Talent Pipelines in Biosecurity</h2>
       <p>A research program examining whether biosecurity training has kept pace with modern-biology risk. I built an LLM pipeline that catalogued 201 programmes across 110+ countries, then analysed the gaps it revealed.</p>
+      <div class="work-hero">
+        <iframe src="SPAR_Final_Poster.pdf" title="SPAR Final Poster"></iframe>
+      </div>
       <div class="work-links">
         <a href="final-report.pdf" target="_blank">Final report →</a>
         <a href="https://github.com/farhanazam98/biosec-talent-pipeline" target="_blank">Pipeline code →</a>
-        <a href="https://drive.google.com/drive/folders/1XWAlz5jNsyZu4a7ndM2TZVvnWHVSo4Ju" target="_blank">Poster →</a>
+        <a href="SPAR_Final_Poster.pdf" target="_blank">Poster →</a>
       </div>
     </article>
 
@@ -203,6 +222,9 @@
       <div class="work-meta">Data Visualization</div>
       <h2 class="work-title">NYC Collision Map</h2>
       <p>An interactive map of New York City traffic-collision data, turning a large public dataset into something explorable and legible.</p>
+      <div class="work-hero">
+        <img src="screenshot.png" alt="NYC Collision Map screenshot">
+      </div>
       <div class="work-links">
         <a href="https://github.com/farhanazam98/nyc-collision-map" target="_blank">Repository →</a>
       </div>
