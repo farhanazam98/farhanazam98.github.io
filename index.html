@@ -143,14 +143,12 @@
     aspect-ratio: 4 / 5;
     overflow: hidden;
     background: var(--rule);
-    position: relative;
   }
-  .ig-frame blockquote {
-    position: absolute !important;
-    inset: 0;
-    width: 100% !important;
-    min-width: 0 !important;
-    margin: 0 !important;
+  .ig-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
   .ig-more { color: var(--muted); }
 
@@ -215,15 +213,9 @@
     <div class="sec-label">Drawings</div>
     <p class="draw-intro">A separate practice, kept up on the side. A few recent pieces.</p>
     <div class="ig-grid">
-      <div class="ig-frame">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DS3dZLKASnr/" data-instgrm-version="14"></blockquote>
-      </div>
-      <div class="ig-frame">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DQcuMHpAYeh/" data-instgrm-version="14"></blockquote>
-      </div>
-      <div class="ig-frame">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DKs8hKKMptd/" data-instgrm-version="14"></blockquote>
-      </div>
+      <div class="ig-frame"><img src="IMG_1494.jpeg" alt="Drawing"></div>
+      <div class="ig-frame"><img src="IMG_1806.jpeg" alt="Drawing"></div>
+      <div class="ig-frame"><img src="IMG_2371.jpeg" alt="Drawing"></div>
     </div>
     <p class="ig-more">More on <a href="https://www.instagram.com/farhi_draws/" target="_blank">Instagram →</a></p>
   </section>
@@ -241,6 +233,6 @@
   <footer>© 2026 Farhan Azam · New York</footer>
 
 </div>
-<script async src="https://www.instagram.com/embed.js"></script>
+
 </body>
 </html>
